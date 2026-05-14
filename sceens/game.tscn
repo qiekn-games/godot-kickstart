@@ -214,6 +214,7 @@ z_index = 5
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1957266014]
 position = Vector2(0, -12)
 zoom = Vector2(4, 4)
+limit_bottom = 80
 position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1269863382]
