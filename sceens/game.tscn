@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ju78xs41jy5n" path="res://sceens/coin.tscn" id="4_lch8r"]
 [ext_resource type="PackedScene" uid="uid://yfsp1ud30h2r" path="res://sceens/killzone.tscn" id="5_k0xja"]
 [ext_resource type="PackedScene" uid="uid://da32aronafbpj" path="res://sceens/enemy.tscn" id="6_s5m7d"]
+[ext_resource type="FontFile" uid="uid://b21nexu6hx1g5" path="res://assets/fonts/PixelOperator8.ttf" id="7_oyi2c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y0r4i"]
 texture = ExtResource("2_cpsiv")
@@ -267,3 +268,14 @@ autoplay = &"move"
 
 [node name="Enemy" parent="." unique_id=267963593 instance=ExtResource("6_s5m7d")]
 position = Vector2(440, -28)
+
+[node name="Label" type="Label" parent="." unique_id=37705830]
+offset_left = -129.0
+offset_top = -26.0
+offset_right = -43.0
+offset_bottom = -18.0
+theme_override_fonts/font = ExtResource("7_oyi2c")
+theme_override_font_sizes/font_size = 8
+text = "A/D to move
+Space to Jump"
+horizontal_alignment = 1
