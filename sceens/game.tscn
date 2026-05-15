@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://vpokvor36qqp"]
 
+[ext_resource type="Script" uid="uid://bcn154mtnuapm" path="res://scripts/game_manager.gd" id="1_62brk"]
 [ext_resource type="PackedScene" uid="uid://0mteoneygql4" path="res://sceens/player.tscn" id="1_cpa4m"]
 [ext_resource type="Texture2D" uid="uid://dg2jmvd73jsl5" path="res://assets/sprites/world_tileset.png" id="2_cpsiv"]
 [ext_resource type="PackedScene" uid="uid://ps0pwy8mdxha" path="res://sceens/platform.tscn" id="3_y0r4i"]
@@ -213,6 +214,19 @@ _data = {
 
 [node name="Game" type="Node2D" unique_id=678821263]
 
+[node name="GameManager" type="Node" parent="." unique_id=1751399031]
+unique_name_in_owner = true
+script = ExtResource("1_62brk")
+
+[node name="LabelScore" type="Label" parent="GameManager" unique_id=37705830]
+offset_left = -43.0
+offset_top = -93.0
+offset_right = 43.0
+offset_bottom = -74.0
+theme_override_fonts/font = ExtResource("7_oyi2c")
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 1
+
 [node name="Player" parent="." unique_id=1386187534 instance=ExtResource("1_cpa4m")]
 z_index = 5
 
@@ -269,11 +283,11 @@ autoplay = &"move"
 [node name="Enemy" parent="." unique_id=267963593 instance=ExtResource("6_s5m7d")]
 position = Vector2(440, -28)
 
-[node name="Label" type="Label" parent="." unique_id=37705830]
+[node name="LabelText" type="Label" parent="." unique_id=783714962]
 offset_left = -129.0
 offset_top = -26.0
 offset_right = -43.0
-offset_bottom = -18.0
+offset_bottom = -7.0
 theme_override_fonts/font = ExtResource("7_oyi2c")
 theme_override_font_sizes/font_size = 8
 text = "A/D to move
